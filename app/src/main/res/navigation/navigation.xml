@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/animalFragment">
+
+    <fragment
+        android:id="@+id/animalFragment"
+        android:name="com.dannytest.animal.controller.AnimalFragment"
+        android:label="fragment_animal"
+        tools:layout="@layout/fragment_animal" >
+        <action
+            android:id="@+id/action_animalFragment_to_animalDetailFragment"
+            app:destination="@id/animalDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/animalDetailFragment"
+        android:name="com.dannytest.animal.controller.AnimalDetailFragment"
+        android:label="AnimalDetailFragment" />
+</navigation>

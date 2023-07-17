@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Animal</string>
+    <string name="age_prefix">年齡：</string>
+    <string name="body_prefix">體型：</string>
+    <string name="color_prefix">顏色：</string>
+    <string name="bacterin_prefix">是否打過疫苗：</string>
+    <string name="CDate_prefix">捕獲日期：</string>
+    <string name="opendata_prefix">opendata：</string>
+    <string name="shelter_name_prefix">收養機構：</string>
+    <string name="shelteraddress_prefix">收養機構地址：</string>
+    <string name="sheltertel_prefix">聯絡電話：</string>
+</resources>

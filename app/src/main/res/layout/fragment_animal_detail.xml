@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.dannytest.animal.viewModel.AnimalDetailViewModel" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/De_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@{viewModel.for_Detail.album_file}"
+
+            />
+
+        <TextView
+            android:id="@+id/De_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="領養資訊頁面"
+            android:textSize="30sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <!-- <TextView
+             android:id="@+id/De_subid"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="subid"
+             android:textSize="20sp"
+             android:text="@{viewModel.for_Detail.animal_id}">
+         </TextView>-->
+
+        <TextView
+            android:id="@+id/De_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="age"
+            android:textSize="20sp"
+            android:text="@{@string/age_prefix + viewModel.for_Detail.animal_age}">
+        </TextView>
+
+        <TextView
+            android:id="@+id/De_bodytype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="bodytype"
+            android:textSize="20sp"
+            android:text="@{@string/body_prefix + viewModel.for_Detail.animal_bodytype}">
+        </TextView>
+
+        <TextView
+            android:id="@+id/De_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="color"
+            android:textSize="20sp"
+            android:text="@{@string/color_prefix + viewModel.for_Detail.animal_colour}">
+        </TextView>
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/De_Variety"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:hint="Variety"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:text="@{viewModel.for_Detail.animal_Variety}">-->
+        <!--        </TextView>-->
+
+        <TextView
+            android:id="@+id/De_bacterin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="bacterin"
+            android:textSize="20sp"
+            android:text="@{@string/bacterin_prefix + viewModel.for_Detail.animal_bacterin}">
+        </TextView>
+
+        <TextView
+            android:id="@+id/De_datefound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="datefound"
+            android:textSize="20sp"
+            android:text="@{@string/CDate_prefix + viewModel.for_Detail.CDate}">
+        </TextView>
+
+        <TextView
+            android:id="@+id/De_opendata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="opendata"
+            android:textSize="20sp"
+            android:text="@{@string/opendata_prefix + viewModel.for_Detail.animal_opendate}">
+        </TextView>
+
+        <TextView
+            android:id="@+id/De_sheltername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="sheltername"
+            android:textSize="20sp"
+            android:text="@{@string/shelter_name_prefix + viewModel.for_Detail.shelter_name}">
+        </TextView>
+
+        <TextView
+            android:id="@+id/De_shelteraddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="shelteraddress"
+            android:textSize="20sp"
+            android:text="@{@string/shelteraddress_prefix + viewModel.for_Detail.shelter_address}">
+        </TextView>
+
+        <TextView
+            android:id="@+id/De_sheltertel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="sheltertel"
+            android:textSize="20sp"
+            android:text="@{@string/sheltertel_prefix + viewModel.for_Detail.shelter_tel}">
+        </TextView>
+
+    </LinearLayout>
+
+</layout>
